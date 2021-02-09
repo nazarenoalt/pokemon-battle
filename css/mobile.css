@@ -1,3 +1,4 @@
+
 .box {
     width: 100vw;
     height: 80vw;
@@ -5,4 +6,72 @@
 .list-button {
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .pokemon-list {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    .hp-bar {
+        height: 16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 10px;
+    }
+    .pokemon.J {
+        width: 60%;
+        top:38%;
+    }
+    .pokemon.M {
+        width: 40%;
+        left: 60%;
+    }
+    .hp-bar {
+        height: 13px;
+    }
+}
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 10px;
+    }
+    .pokemon-list {
+        width: 70%;
+        margin: 15px auto;
+    }
+    .list-container {
+        width: 100%;
+    }
+    .list-button {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    .stats-box {
+        border: 3px double var(--gray);
+    }
+}
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 7px;
+    }
+    .hp-bar {
+        height: 10px;
+    }
+    .pokemon-list {font-size: 2em;}
+}
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 6px;
+    }
 }

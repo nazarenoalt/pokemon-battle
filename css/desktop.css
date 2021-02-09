@@ -44,7 +44,6 @@ body {
 .pokemon.J {
     visibility: visible;
     width: 50%;
-    top: 150px;
     top:38%;
 }
 .pokemon.M {
@@ -71,34 +70,35 @@ body {
     visibility: hidden;
     top: 10%;
     left: 10%;
-    width: 250px;
-    height: 70px;
+    width: 32%;
+    padding-bottom: 1%;
 }
 .stats-J {
     visibility: hidden;
     bottom: 10%;
     right: 10%;
-    width: 250px;
-    height: 90px;
+    width: 32%;
 }
 .name {
+    font-size: 1rem;
     display: inline-block;
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 4%;
+    margin-left: 6%;
 }
 .hp-bar {
-    width: 150px;
+    width: 60%;
     height: 20px;
-    margin-left: 60px;
+    margin-left: 24%;
 }
 .hp-container {
-    position: absolute;
-    right: 26px;
+    margin-left:50%;
 }
 .leyenda {
     margin-top: 10px;
     width: 800px;
     text-align: center;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 .dialogo {
     display: inline-block;
