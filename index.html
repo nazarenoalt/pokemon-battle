@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Pokemon Battle Simulator</title>
 </head>
 <body>
+    <div class="list-container">
+        <select class="pokemon-list" id="pokemonJ-list" required">
+            <option>-Pokemon Jugador-</option>
+        </select>
+        <select class="pokemon-list" id="pokemonM-list" required>
+            <option>-Pokemon Maquina-</option>
+        </select>
+        <button class="list-button" id="list-button">Comenzar</button>
+    </div>
+    
+    <div class="box" id="box">
+        <!--sprites-->
+        <img class="pokemon J hidden" id="pokemon-J" src="" alt="">
+        <img class="pokemon M hidden" id="pokemon-M" src="" alt="">
+        <!--parrafos de dialogo-->
+
+        <div class="dialogo M"><p class="span-dialog" id="span-dialogM"></p></div>
+        <div class="dialogo J"><p id="span-dialogJ"></p></div><!--stats box-->
+        <div class="stats-box stats-J">
+            <span class="name" id="name-J"></span>
+            <meter class="hp-bar" id="hp-bar__J" min='0'></meter>
+            <div class="hp-container">
+                <span class="hp" id="hp">53</span> / <span class="currency-hp" id="currency-hp">53</span></div>
+            </div>
+
+        <div class="stats-box stats-M">
+            <span class="name" id="name-M"></span>
+            <meter class="hp-bar" id="hp-bar__M" min='0'></meter>
+        </div>
+    </div>
+    <p class="leyenda">Clickea en el personaje enemigo para atacarlo</p>
+    <!--Scripts JS-->
+    <script src="index.js"></script>
 </body>
 </html>

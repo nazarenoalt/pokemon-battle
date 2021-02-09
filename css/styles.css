@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Early GameBoy";
+    src: url("../src/fonts/Early-GameBoy.ttf")
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Early GameBoy", Arial, Helvetica, sans-serif;
+    --gray: rgb(184, 184, 184);
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pokemon-list {
+    display: inline-block;
+    margin: 30px 10px 20px;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border-radius: 20px;
+}
+.list-button {
+    padding: 9px;
+}
+.box {
+    display: block;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 1px solid var(--gray);
+    overflow: hidden;
+    background-color: rgb(27, 21, 61);
+}
+.pokemon {
+    position: absolute;
+    transition: 1s;
+
+}
+.pokemon.J {
+    visibility: visible;
+    width: 50%;
+    top: 150px;
+    top:38%;
+}
+.pokemon.M {
+    visibility: visible;
+    width: 40%;
+    left: 60%;
+    cursor: pointer;
+}
+.pokemon.J.hidden {
+    margin-left: -500%;
+}
+.pokemon.M.hidden {
+    margin-left: 500%;
+}
+.stats-box {
+    position: absolute;
+    border: double 5px var(--gray);
+    border-radius: 7px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color:rgb(51, 93, 42)
+}
+.stats-M {
+    visibility: hidden;
+    top: 10%;
+    left: 10%;
+    width: 250px;
+    height: 70px;
+}
+.stats-J {
+    visibility: hidden;
+    bottom: 10%;
+    right: 10%;
+    width: 250px;
+    height: 90px;
+}
+.name {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.hp-bar {
+    width: 150px;
+    height: 20px;
+    margin-left: 60px;
+}
+.hp-container {
+    position: absolute;
+    right: 26px;
+}
+.leyenda {
+    margin-top: 10px;
+    width: 800px;
+    text-align: center;
+}
+.dialogo {
+    display: inline-block;
+    color: white;
+}
+.dialogo.J {
+    margin-top: 20%;
+    margin-left: 47%;
+}
+.dialogo.M {
+    margin-top: 170px;
+    margin-left: 53%;
+}
+#span-dialogM, #span-dialogJ {
+    display: inline-block;
+    transition: margin .1s;
+    margin-top: 40px;
+}
+.mensaje-final {
+    position: absolute;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    top: 45%;
+    color: white;
+
+}
