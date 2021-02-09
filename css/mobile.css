@@ -1,0 +1,8 @@
+.box {
+    width: 100vw;
+    height: 80vw;
+}
+.list-button {
+    display: block;
+    margin: 0 auto;
+}
